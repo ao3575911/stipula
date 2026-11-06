@@ -21,11 +21,11 @@
 | `/export` | JSON document of your records. |
 | `/forget` | Asks for a button, then deletes stored copies of your notes. |
 | `/settings` | Shows plan, quota, retention, username display. |
-| `/settings retain on|off` | Whether future notes keep a private copy. Default off. |
-| `/settings username on|off` | Whether your `@username` appears on witness lines. |
+| `/settings retain on\|off` | Whether future notes keep a private copy. Default off. |
+| `/settings username on\|off` | Whether your `@username` appears on witness lines. |
 | `/quota` | Same snapshot as settings. |
 | `/health` | Owner only. Integrity, counts, version. No token. |
-| `/grant USER_ID [free|pro]` | Owner only. Defaults to pro. |
+| `/grant USER_ID [free\|pro]` | Owner only. Defaults to pro. |
 | `/revoke USER_ID` | Owner only. Sets free. |
 
 Buttons: Witness, Accept, Decline, Fulfilled, Cancel, Yes, No, Abstain, Close and seal, Delete my note copies.
