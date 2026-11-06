@@ -1,0 +1,45 @@
+{
+  "private_seal_command": {
+    "update_id": 100,
+    "message": {
+      "message_id": 5,
+      "from": {"id": 7, "is_bot": false, "first_name": "Ada", "username": "ada"},
+      "chat": {"id": 7, "type": "private"},
+      "text": "/seal"
+    }
+  },
+  "group_reply_seal": {
+    "update_id": 101,
+    "message": {
+      "message_id": 9,
+      "from": {"id": 7, "is_bot": false, "first_name": "Ada", "username": "ada"},
+      "chat": {"id": -100, "type": "supergroup", "title": "Workshop"},
+      "text": "/seal@StipulaBot",
+      "reply_to_message": {
+        "message_id": 8,
+        "from": {"id": 8, "is_bot": false, "first_name": "Sam", "username": "sam"},
+        "text": "Use supplier B."
+      }
+    }
+  },
+  "witness_callback": {
+    "update_id": 102,
+    "callback_query": {
+      "id": "cb-1",
+      "from": {"id": 8, "is_bot": false, "first_name": "Sam", "username": "sam"},
+      "data": "wit:STL-0000-0000",
+      "message": {
+        "message_id": 10,
+        "chat": {"id": -100, "type": "supergroup", "title": "Workshop"}
+      }
+    }
+  },
+  "inline_lookup": {
+    "update_id": 103,
+    "inline_query": {
+      "id": "iq-1",
+      "from": {"id": 7, "is_bot": false, "first_name": "Ada", "username": "ada"},
+      "query": "STL-0000-0000"
+    }
+  }
+}
