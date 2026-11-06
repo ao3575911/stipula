@@ -1,0 +1,18 @@
+[Unit]
+Description=Stipula Telegram bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=stipula
+WorkingDirectory=/opt/stipula
+EnvironmentFile=/opt/stipula/.env
+ExecStart=/opt/stipula/.venv/bin/python -m telegram_innovation run
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
